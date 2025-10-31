@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apache TVM</title>
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="_static/downloads/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="/css/slick-theme.css">
     <link rel="stylesheet" href="/css/custom.css">
@@ -33,15 +33,11 @@
     </li>
     
     <li class="nav-item">
-        <a class="nav-link" href="/blog">Blog</a>
+        <a class="nav-link" href="/posts">Posts</a>
     </li>
     
     <li class="nav-item">
-        <a class="nav-link" href="https://tvm.apache.org/docs/">Docs</a>
-    </li>
-    
-    <li class="nav-item">
-        <a class="nav-link" href="https://tvmcon.org/">Conference</a>
+        <a class="nav-link" href="https://github.com/apache/tvm-ffi/">TVM FFI</a>
     </li>
     
     <li class="nav-item">
@@ -68,7 +64,7 @@
     </li>
     
     <li>
-        <a href="https://www.apache.org/security/">Security</a>
+        <a href="https://tvm.apache.org/docs/reference/security.html">Security</a>
     </li>
     
     <li>
@@ -108,7 +104,7 @@
     </li>
     
     <li>
-        <a href="https://www.apache.org/security/">Security</a>
+        <a href="https://tvm.apache.org/docs/reference/security.html">Security</a>
     </li>
     
     <li>
@@ -133,13 +129,13 @@
         <div class="bannerInner">
           <div class="bannerDetails">
             <h1>Apache TVM</h1>
-            <p class="subHeadingOne">An End to End Machine Learning Compiler Framework for CPUs, GPUs and accelerators</p>
+            <p class="subHeadingOne">An Open Machine Learning Compiler Framework</p>
             <a href="/#about" class="btn btn-dark">Learn More</a>
           </div>
           <div class="rightAlignDetails">
-            <p class="subHeadingTwo">Apache TVM is an open source machine learning compiler framework for CPUs,
-              GPUs, and machine learning accelerators. It aims to enable machine learning engineers to optimize and run
-              computations efficiently on any hardware backend.</p>
+            <p class="subHeadingTwo">
+              Apache TVM is a machine learning compilation framework, following the principle of Python-first development and universal deployment. It takes in pre-trained machine learning models, compiles and generates deployable modules that can be embedded and run everywhere.
+            </p>
           </div>
         </div>
       </div>
@@ -156,13 +152,13 @@
       <li class="aboutDetailsCol">
         <h4 id="about-apache-tvm">About Apache TVM</h4>
         <p>The vision of the Apache TVM Project is to host a diverse community of experts and practitioners
-in machine learning, compilers, and systems architecture to build an accessible, extensible, and
-automated open-source framework that optimizes current and emerging machine learning models for
+in machine learning, compilers, and systems architecture to build an accessible, flexible, and
+efficient open-source framework that optimizes current and emerging machine learning models for
 any hardware platform. TVM provides the following main features:</p>
 
         <ul>
-          <li>Compilation of deep learning models into minimum deployable modules.</li>
-          <li>Infrastructure to automatic generate and optimize models on more backend with better performance.</li>
+          <li>Python-first development that enables quick customization of machine learning compiler pipelines.</li>
+          <li>Universal deployment to bring models into minimum deployable modules.</li>
         </ul>
       </li>
     </ul>
@@ -181,21 +177,18 @@ any hardware platform. TVM provides the following main features:</p>
       </li>
       <li class="key-block"><img src="/assets/images/run.svg" alt="Run Everywhere" title="run" />
         <h3 id="run-everywhere">Run Everywhere</h3>
-        <p>CPUs, GPUs, browsers, microcontrollers, FPGAs and more.</p>
-
-        <p class="mt-0 mt-lg-3">Automatically generate and optimize tensor operators on more backends.</p>
+        <p>From data center GPUs to edge environments.</p>
       </li>
       <li class="key-block"><img src="/assets/images/Flexibility.svg" alt="Flexibility" title="Flexibility" />
         <h3 id="flexibility">Flexibility</h3>
-        <p>Need support for block sparsity, quantization (1,2,4,8 bit integers, posit), random forests/classical ML, memory planning, MISRA-C compatibility, Python prototyping or all of the above?</p>
-
-        <p class="mt-0 mt-lg-3">TVM’s flexible design enables all of these things and more.</p>
+        <p>Flexible design that enables easy customization of compilation pipelines.</p>
       </li>
       <li class="key-block"><img src="/assets/images/use.svg" alt="Ease of Use" title="Ease of Use" />
         <h3 id="ease-of-use">Ease of Use</h3>
-        <p>Compilation of deep learning models in Keras, MXNet, PyTorch, Tensorflow, CoreML, DarkNet and more. Start using TVM with Python today, build out production stacks using C++, Rust, or Java the next day.</p>
+        <p>Easy to use python first compiler API that brings universal deployment.</p>
       </li>
     </ul>
+
   </div>
 
 </section>
@@ -212,10 +205,6 @@ any hardware platform. TVM provides the following main features:</p>
         <h3 id="community">Community</h3>
         <p><a href="/community">Join the TVM <br /> community</a></p>
       </li>
-      <li class="doc-link-block">
-        <h3 id="blog">Blog</h3>
-        <p><a href="/blog">Read more about TVM <br /> and our thinking</a></p>
-      </li>
     </ul>
 
   </div>
@@ -227,12 +216,11 @@ any hardware platform. TVM provides the following main features:</p>
 
 
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="_static/downloads/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="_static/downloads/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="_static/downloads/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- <script src="./assets/js/slick.js"></script> -->
   <script src="/assets/js/custome.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75982049-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
